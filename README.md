@@ -2,7 +2,7 @@
 
 china-credit-dashboard/
 ├── schema/
-│   ├── dim_*.sql
+├── dim_*.sql
 │   ├── fact_*.sql
 ├── procedures/
 │   ├── build_china_credit_curve.sql
