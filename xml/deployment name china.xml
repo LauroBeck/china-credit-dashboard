@@ -1,0 +1,29 @@
+<deployment name="china-credit-dashboard" version="1.0">
+
+  <schema>BLOOMBERG</schema>
+
+  <tables>
+    <table>dim_tenor</table>
+    <table>fact_china_zero_curve</table>
+    <table>fact_china_credit_spread</table>
+    <table>fact_china_credit_curve</table>
+  </tables>
+
+  <procedures>
+    <procedure>load_china_rate</procedure>
+    <procedure>build_china_credit_curve</procedure>
+    <procedure>generate_pboc_shock_curve</procedure>
+  </procedures>
+
+  <materializedViews>
+    <mview>mv_china_yield_curve</mview>
+    <mview>mv_china_credit_dashboard</mview>
+  </materializedViews>
+
+  <scenarios>
+    <shock name="+50bps" value="0.50"/>
+    <shock name="-50bps" value="-0.50"/>
+  </scenarios>
+
+</deployment>
+

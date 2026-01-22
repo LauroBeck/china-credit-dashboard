@@ -1,0 +1,13 @@
+
+---
+
+## 5️⃣ Git commands (exactly what to run)
+
+```bash
+git init
+git add .
+git commit -m "Initial China Credit Dashboard (Oracle)"
+git branch -M main
+git remote add origin git@github.com:<your-username>/china-credit-dashboard.git
+git push -u origin main
+

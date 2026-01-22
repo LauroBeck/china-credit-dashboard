@@ -1,0 +1,44 @@
+china-credit-dashboard/
+├── README.md
+├── LICENSE
+├── .gitignore
+│
+├── deploy/
+│   ├── deploy_from_xml.sql
+│   ├── rollback_from_xml.sql
+│
+├── schema/
+│   ├── dim/
+│   │   ├── dim_tenor.sql
+│   │   └── dim_credit_type.sql
+│   │
+│   ├── fact/
+│   │   ├── fact_china_zero_curve.sql
+│   │   ├── fact_china_credit_spread.sql
+│   │   └── fact_china_credit_curve.sql
+│
+│   └── mv/
+│       ├── mv_china_yield_curve.sql
+│       └── mv_china_credit_dashboard.sql
+│
+├── procedures/
+│   ├── load_china_rate.sql
+│   ├── build_china_credit_curve.sql
+│   └── pboc_shock_generator.sql
+│
+├── views/
+│   ├── vw_china_yield_curve.sql
+│   ├── vw_china_credit_intraday.sql
+│   └── vw_china_credit_stress.sql
+│
+├── xml/
+│   └── china_credit_dashboard.xml
+│
+├── data/
+│   └── seed_china_rates.sql
+│
+└── docs/
+    ├── architecture.md
+    ├── yield_curve_bootstrap.md
+    └── credit_spread_methodology.md
+
