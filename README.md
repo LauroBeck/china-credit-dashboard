@@ -1,4 +1,4 @@
-#china-credit-dashboard/
+ #china-credit-dashboard/
 ├── schema/
 ├── dim_*.sql
 │   ├── fact_*.sql
